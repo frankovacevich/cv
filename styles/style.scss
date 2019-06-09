@@ -203,6 +203,7 @@ li{
 	border-radius: 20px;
 	height: 20px;
 	line-height: 35px;
+	white-space: nowrap;
 	background-color: $main_color;
 	color: $tag_text_color;
 }

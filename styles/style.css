@@ -216,6 +216,7 @@ li:before {
   border-radius: 20px;
   height: 20px;
   line-height: 35px;
+  white-space: nowrap;
   background-color: #358da3;
   color: white;
 }
