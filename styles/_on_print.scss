@@ -1,0 +1,37 @@
+@page {size: A4;}
+
+@media print {
+
+	#page {
+		margin-left: 0;
+		margin-right: 0;
+		border-radius: 0;
+		box-shadow: none;
+		position: absolute;
+		box-sizing: content-box;
+		top: 0;
+  }
+
+	.hide-on-print{ visibility: hidden; }
+	.page-container{ padding: 0; }
+	.top-left-radius{ border-top-left-radius: 0; }
+	.top-right-radius{ border-top-right-radius: 0; }
+	.qr-container{ top: 7.7in; bottom: auto; }
+	.white-space{ display: block; }
+
+	//Change fonts
+	html, body{
+		width: 8.27in;
+		font-family: $print_sans_serif_font;
+		font-size: $print_default_font_size;
+	}
+
+	h1{ font-family: $print_serif_font;	}
+	h2{ font-family: $print_serif_font; }
+	p{ font-family: $print_sans_serif_font;	font-size: $print_default_font_size; }
+	a{ font-family: $print_sans_serif_font; font-size: $print_default_font_size; text-decoration: none; }
+	a:link{ text-decoration: none; }
+	a:hover { text-decoration: none; }
+
+	.versalitas-title{ font-family: $print_sans_serif_font; font-size: $print_default_font_size; }
+}

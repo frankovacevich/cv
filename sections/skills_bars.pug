@@ -1,0 +1,61 @@
+mixin skill_bar_item(skill_name,percentage,bar_width_in_percentage = '50%')
+	tr
+		td
+			a= skill_name
+		td(style="width:" + bar_width_in_percentage)
+			div.progress
+				div.progress-bar(role="progressbar" style={width: percentage + '%'} aria-valuenow=percentage aria-valuemin="0" aria-valuemax="100")
+
+mixin skill_dot_item(skill_name, value_1_to_5)
+	tr
+		td
+			a= skill_name
+		td(style="width:50%")
+			
+			- var n = 0;
+			while n<value_1_to_5
+				div.skill-round-dot
+				- n++
+			
+//==============================================================================
+// WRITE CODE HERE ↘↘
+//==============================================================================
+
+//==============================================================================
+// TWO COLLUMNS
+//==============================================================================
+//-
+	h1 Skills
+	div.row
+			
+		//SKILL SET LEFT
+		div.col-sm-6(style="padding:0; padding-right:10px;")
+			h2 Professional Skills
+			table(style="width:100%")
+				+skill_bar_item("skill number 1","87")
+				+skill_bar_item("skill number 2","67")
+				+skill_bar_item("skill number 3","88")
+				+skill_bar_item("skill number 4","66")
+				+skill_bar_item("skill number 5","99")
+				
+		//SKILL SET RIGHT
+		div.col-sm-6(style="padding:0; padding-right:10px;")
+			h2 Personal Skills
+			table(style="width:100%")
+				+skill_dot_item("skill number 6", 3)
+				+skill_dot_item("skill number 7", 2)
+				+skill_dot_item("skill number 8", 4)
+				+skill_dot_item("skill number 9", 2)
+				+skill_dot_item("skill number 10", 5)
+				
+//==============================================================================
+// ONLY ONE COLLUMN
+//==============================================================================
+
+h1 Skills
+table(style="width:100%")
+	+skill_bar_item("skill number 1","87","80%")
+	+skill_bar_item("skill number 2","67","80%")
+	+skill_bar_item("skill number 3","88","80%")
+	+skill_bar_item("skill number 4","66","80%")
+	+skill_bar_item("skill number 5","99","80%")

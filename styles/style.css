@@ -1,0 +1,368 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Neuton:700|Noto+Sans+HK&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Hammersmith+One|Permanent+Marker&display=swap");
+/*Import fonts*/
+/*Fonts*/
+/*Page style*/
+/*Colors*/
+/*Override bootstrap row to fill width of page*/
+.row {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.progress-bar {
+  background-color: #358da3;
+}
+
+ion-icon {
+  font-size: 20px;
+  color: #358da3;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+/*Body*/
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans HK", sans-serif;
+  font-size: 14px;
+}
+
+/*Headers and paragraphs*/
+h1 {
+  font-size: 28px;
+  font-family: "Neuton", serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: left;
+  font-size: 20px;
+  margin-top: 7px;
+  font-family: "Neuton", serif;
+}
+
+p {
+  font-family: "Noto Sans HK", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 3px 0 3px 0;
+  cursor: default;
+}
+
+a {
+  font-family: "Noto Sans HK", sans-serif;
+  line-height: 22px;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  cursor: default;
+}
+
+a:link {
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #358da3;
+}
+
+a:active {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+li:before {
+  color: #358da3;
+  content: "•";
+  font-size: 1em;
+  padding-right: 1em;
+  position: relative;
+  top: 0em;
+}
+
+.versalitas-title {
+  text-transform: uppercase;
+  font-family: "Noto Sans HK", sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+/*Containers*/
+.page-container {
+  padding: 10px;
+}
+
+#page {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 4px 16px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 10px rgba(0, 0, 0, 0.19);
+  position: relative;
+  box-sizing: border-box;
+  top: 277px;
+  /*width: 100%;*/
+  max-width: 8.27in;
+  min-height: 11.69in;
+  background-color: white;
+}
+
+.left-container {
+  background-color: #f8f8f8;
+  padding-left: 30px;
+  padding-right: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.top-left-radius {
+  border-top-left-radius: 20px;
+}
+@media screen and (max-width: 575px) {
+  .top-left-radius {
+    border-top-right-radius: 20px;
+  }
+}
+
+.top-right-radius {
+  border-top-right-radius: 20px;
+}
+@media screen and (max-width: 575px) {
+  .top-right-radius {
+    border-top-right-radius: 0;
+    background-color: #f8f8f8;
+    margin-top: 0;
+  }
+}
+
+.qr-container {
+  box-sizing: border-box;
+  position: absolute;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+@media screen and (max-width: 575px) {
+  .qr-container {
+    position: static;
+    bottom: auto;
+    right: auto;
+    left: auto;
+  }
+}
+.qr-container img {
+  width: 100%;
+  max-width: 130px;
+  text-align: center;
+}
+
+.white-space {
+  display: none;
+}
+
+/*Images*/
+.img-background {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/top.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-size: cover;
+  width: 100%;
+  height: 390px;
+  position: fixed;
+}
+
+.img-profile {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 100%;
+  margin: 10px 10px 10px 0;
+  width: 75px;
+  height: 75px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.img-profile:hover, .img-profile.hover {
+  box-shadow: 0 0 0 0.2rem rgba(53, 141, 163, 0.5) !important;
+}
+
+/* Misc */
+.skill-tag {
+  display: inline;
+  margin: 25px 2px 25px 0px;
+  padding: 5px 10px 5px 10px;
+  font-size: 13px;
+  border-radius: 20px;
+  height: 20px;
+  line-height: 35px;
+  background-color: #358da3;
+  color: white;
+}
+
+.skill-round-dot {
+  background-color: #358da3;
+  width: 12px;
+  height: 12px;
+  margin: 0 1px 0 1px;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+.download-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+}
+.download-button td {
+  color: white;
+}
+.download-button ion-icon {
+  color: white;
+}
+.download-button button, .download-button .btn-primary, .download-button .btn-primary:hover, .download-button .btn-primary:active, .download-button .btn-primary:visited {
+  background-color: #358da3 !important;
+  border-color: #358da3 !important;
+}
+.download-button .btn-primary:focus, .download-button .btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(53, 141, 163, 0.5) !important;
+}
+@media screen and (max-width: 575px) {
+  .download-button {
+    display: none;
+  }
+}
+
+table.timeline td {
+  height: 100%;
+  vertical-align: top;
+  display: table-cell;
+  padding: 0;
+  position: relative;
+}
+table.timeline .tl {
+  width: 3px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -15px;
+  margin-bottom: -15px;
+  background-color: #358da3;
+}
+table.timeline .tl-milestone {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #358da3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+table.timeline .tl-milestone:hover, table.timeline .tl-milestone.hover {
+  box-shadow: 0 0 0 0.2rem rgba(53, 141, 163, 0.5);
+}
+
+@page {
+  size: A4;
+}
+@media print {
+  #page {
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+    box-shadow: none;
+    position: absolute;
+    box-sizing: content-box;
+    top: 0;
+  }
+
+  .hide-on-print {
+    visibility: hidden;
+  }
+
+  .page-container {
+    padding: 0;
+  }
+
+  .top-left-radius {
+    border-top-left-radius: 0;
+  }
+
+  .top-right-radius {
+    border-top-right-radius: 0;
+  }
+
+  .qr-container {
+    top: 7.7in;
+    bottom: auto;
+  }
+
+  .white-space {
+    display: block;
+  }
+
+  html, body {
+    width: 8.27in;
+    font-family: "Arial";
+    font-size: 14px;
+  }
+
+  h1 {
+    font-family: "Neuton", serif;
+  }
+
+  h2 {
+    font-family: "Neuton", serif;
+  }
+
+  p {
+    font-family: "Arial";
+    font-size: 14px;
+  }
+
+  a {
+    font-family: "Arial";
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .versalitas-title {
+    font-family: "Arial";
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

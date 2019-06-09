@@ -1,0 +1,47 @@
+doctype html
+html 
+	include includes/head.html
+	body
+		include includes/download_button.html
+
+		div.img-background.hide-on-print
+		div.page-container
+			div#page.d-flex.flex-column(style="flex: 1")
+				div.row
+				
+					//====================================================================
+					//PANEL 1: PROFILE PIC
+					//====================================================================
+					div.col-sm-4.left-container.top-left-radius
+						include includes/profile.html
+						
+					//====================================================================
+					//PANEL 2: PRESENTATION
+					//====================================================================
+					div.col-sm-8.right-container.top-right-radius
+						include includes/presentation.html
+
+			
+				div.row.flex-grow.d-flex(style="flex: 1")
+					
+					//====================================================================
+					//PANEL 3: LEFT PANEL
+					//====================================================================
+					div.col-sm-4.left-container
+						include sections/about.pug
+						include includes/qr_code.html
+					
+					//====================================================================
+					//PANEL 2: MAIN BODY
+					//====================================================================
+					div.col-sm-8.right-container
+						
+						include sections/experience.pug
+						include sections/timeline.pug
+						include sections/skills_tags.pug
+						include sections/publications.pug
+						
+				//Include page resize script to calculate the number of pages needed
+				//when printing the document
+				include includes/page_resize.html	
+						

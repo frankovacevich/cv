@@ -1,0 +1,8 @@
+<script>
+//page_height in inches
+page_height = Math.round($("#page").height() * 1.041666535)/100;
+page_height = Math.ceil(page_height / 11.69) * 11.69;
+
+new_query = "@media print { #page{ height:" + page_height + "in;" + " }}";
+$("#jquery_print_styling").text(new_query);
+</script>

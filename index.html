@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	<!-- Title and favicon -->
+	<title>Francisco Kovacevich</title>
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+
+
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<!-- Ion Icons -->
+	<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+
+	<!-- Import styles -->
+	<link rel='stylesheet' href='styles/style.css'/>
+
+	<!-- Enable tooltips in Bootstrap -->
+	<script> $(function () { $('[data-toggle="tooltip"]').tooltip() }) </script>
+
+	<style id="jquery_print_styling"></style>
+</head>
+
+  <body><div class="download-button hide-on-print">
+	<button type="button" class="btn btn-primary" onclick="window.print()">
+	<table>
+		<tr>
+			<td>
+				Print/Save as PDF
+			</td>
+			<td>
+				<ion-icon name="document"></ion-icon>
+			</td>
+		</tr>
+	</table>
+	</button>
+</div>
+
+    <div class="img-background hide-on-print"></div>
+    <div class="page-container">
+      <div class="d-flex flex-column" id="page" style="flex: 1">
+        <div class="row">
+          <!--====================================================================-->
+          <!--PANEL 1: PROFILE PIC-->
+          <!--====================================================================-->
+          <div class="col-sm-4 left-container top-left-radius">
+<!--STYLE 1-->
+<!--div-->
+<!--	img.img-profile(src='images/profile.jpg' style="width:150px; height: 150px;")-->
+<!--	div.big-text(style="font-size: 26px;") Francisco<br>Kovacevich-->
+<!--STYLE 2-->
+<div>
+  <table>
+    <tr>
+      <td><img class="img-profile" src="images/profile.jpg"/></td>
+      <td><a style="font-size: 20px">Francisco<br>Kovacevich</a></td>
+    </tr>
+  </table>
+</div>
+
+          </div>
+          <!--====================================================================-->
+          <!--PANEL 2: PRESENTATION-->
+          <!--====================================================================-->
+          <div class="col-sm-8 right-container top-right-radius"><table>
+	<tr><td>
+		<div class="versalitas-title" style="margin-bottom: 0">MECH. ENGINEER / DEVELOPER</div>
+		<p style="font-style:oblique"> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit </p>
+	</td></tr>
+</table>
+
+          </div>
+        </div>
+        <div class="row flex-grow d-flex" style="flex: 1">
+          <!--====================================================================-->
+          <!--PANEL 3: LEFT PANEL-->
+          <!--====================================================================-->
+          <div class="col-sm-4 left-container">
+            <!--==============================================================================-->
+            <!-- WRITE CODE HERE ↘↘-->
+            <!-- about_item('icon', 'text', 'link, 'description_tooltip')-->
+            <!-- where the icon is the name code from the ion icon library (ionicons.com)-->
+            <!--==============================================================================-->
+            <div class="versalitas-title">about me</div>
+                        <table>
+                          <tr data-toggle="tooltip" data-placement="right" title="">
+                            <td>
+                              <ion-icon name="pin"></ion-icon>
+                            </td>
+                            <td><a>Argentina</a>
+                            </td>
+                            <td>
+                              <ion-icon class="hide-on-print" name="information-circle-outline" style="visibility:hidden"></ion-icon>
+                            </td>
+                          </tr>
+                        </table>
+                        <table>
+                          <tr data-toggle="tooltip" data-placement="right" title="Hi">
+                            <td>
+                              <ion-icon name="calendar"></ion-icon>
+                            </td>
+                            <td><a>24 years old</a>
+                            </td>
+                            <td>
+                              <ion-icon class="hide-on-print" name="information-circle-outline"></ion-icon>
+                            </td>
+                          </tr>
+                        </table>
+            <div class="versalitas-title">contact</div>
+                        <table>
+                          <tr data-toggle="tooltip" data-placement="right" title="">
+                            <td>
+                              <ion-icon name="mail"></ion-icon>
+                            </td>
+                            <td><a href="mailto:fran.kovacevich@gmail.com">fran.kovacevich@gmail.com</a>
+                            </td>
+                            <td>
+                              <ion-icon class="hide-on-print" name="information-circle-outline" style="visibility:hidden"></ion-icon>
+                            </td>
+                          </tr>
+                        </table>
+                        <table>
+                          <tr data-toggle="tooltip" data-placement="right" title="">
+                            <td>
+                              <ion-icon name="call"></ion-icon>
+                            </td>
+                            <td><a href="tel:+5493424499974">+549 342 44 999 74</a>
+                            </td>
+                            <td>
+                              <ion-icon class="hide-on-print" name="information-circle-outline" style="visibility:hidden"></ion-icon>
+                            </td>
+                          </tr>
+                        </table>
+                        <table>
+                          <tr data-toggle="tooltip" data-placement="right" title="">
+                            <td>
+                              <ion-icon name="logo-github"></ion-icon>
+                            </td>
+                            <td><a>frankovacevich</a>
+                            </td>
+                            <td>
+                              <ion-icon class="hide-on-print" name="information-circle-outline" style="visibility:hidden"></ion-icon>
+                            </td>
+                          </tr>
+                        </table>
+                        <table>
+                          <tr data-toggle="tooltip" data-placement="right" title="">
+                            <td>
+                              <ion-icon name="logo-twitter"></ion-icon>
+                            </td>
+                            <td><a>@_frankova</a>
+                            </td>
+                            <td>
+                              <ion-icon class="hide-on-print" name="information-circle-outline" style="visibility:hidden"></ion-icon>
+                            </td>
+                          </tr>
+                        </table>
+                        <table>
+                          <tr data-toggle="tooltip" data-placement="right" title="">
+                            <td>
+                              <ion-icon name="logo-instagram"></ion-icon>
+                            </td>
+                            <td><a>fran.kova</a>
+                            </td>
+                            <td>
+                              <ion-icon class="hide-on-print" name="information-circle-outline" style="visibility:hidden"></ion-icon>
+                            </td>
+                          </tr>
+                        </table>
+                        <table>
+                          <tr data-toggle="tooltip" data-placement="right" title="">
+                            <td>
+                              <ion-icon name="logo-linkedin"></ion-icon>
+                            </td>
+                            <td><a>Francisco Kovacevich</a>
+                            </td>
+                            <td>
+                              <ion-icon class="hide-on-print" name="information-circle-outline" style="visibility:hidden"></ion-icon>
+                            </td>
+                          </tr>
+                        </table>
+            <div class="versalitas-title">languages</div>
+                        <table>
+                          <tr data-toggle="tooltip" data-placement="right" title="I was born in Argentina, and I've speaking ">
+                            <td><a>Spanish (mother tongue)</a>
+                            </td>
+                            <td>
+                              <ion-icon class="hide-on-print" name="information-circle-outline"></ion-icon>
+                            </td>
+                          </tr>
+                        </table>
+                        <table>
+                          <tr data-toggle="tooltip" data-placement="right" title="I've">
+                            <td><a>English (fluent)</a>
+                            </td>
+                            <td>
+                              <ion-icon class="hide-on-print" name="information-circle-outline"></ion-icon>
+                            </td>
+                          </tr>
+                        </table>
+                        <table>
+                          <tr data-toggle="tooltip" data-placement="right" title="">
+                            <td><a>French (fluent)</a>
+                            </td>
+                            <td>
+                              <ion-icon class="hide-on-print" name="information-circle-outline" style="visibility:hidden"></ion-icon>
+                            </td>
+                          </tr>
+                        </table>
+                        <table>
+                          <tr data-toggle="tooltip" data-placement="right" title="">
+                            <td><a>Croatian (beginner)</a>
+                            </td>
+                            <td>
+                              <ion-icon class="hide-on-print" name="information-circle-outline" style="visibility:hidden"></ion-icon>
+                            </td>
+                          </tr>
+                        </table><div class="qr-container"><img src="images/qr-code.svg"/>
+  <p style="font-size:11px">frankovacevich.github.io/cv</p>
+</div>
+
+          </div>
+          <!--====================================================================-->
+          <!--PANEL 2: MAIN BODY-->
+          <!--====================================================================-->
+          <div class="col-sm-8 right-container">
+            <h1>Experience</h1>
+                        <div class="row">
+                          <div class="col-sm-12" style="padding-left:0">
+                            <p class="versalitas-title" style="line-height:12px; margin:0; font-weight: normal">Aug 1990 - Dec 1990</p>
+                            <p class="versalitas-title" style="line-height:12px; margin:0">Government Internship</p>
+                            <p>Basically I played gold with the president for some months. One day I beat him at the game and next thing I know I was fired&lt;a href='www.google.com'&gt;hola&lt;/a&gt;.</p>
+                          </div>
+                        </div>
+            <h1>Timeline</h1>
+            <table class="timeline">
+                          <tr>
+                            <td style="width:30px">
+                              <div class="tl-milestone" style="width:20px;height:20px"></div>
+                            </td>
+                            <td><b>Peru Championship 2009</b></td>
+                          </tr>
+                          <tr>
+                            <td style="width:30px">
+                              <div class="tl"></div>
+                            </td>
+                            <td>
+                              <p>I won the tournament killing all  my competitors. Everybody was scared first but they decided to give me the first prize anyone. Ahh good ol times.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width:30px">
+                              <div class="tl-milestone" style="width:10px;height:10px"></div>
+                            </td>
+                            <td><b>India Semifinals 2008</b></td>
+                          </tr>
+                          <tr>
+                            <td style="width:30px">
+                              <div class="tl"></div>
+                            </td>
+                            <td>
+                              <p></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width:30px">
+                              <div class="tl-milestone" style="width:10px;height:10px"></div>
+                            </td>
+                            <td><b>High School musical 2009</b></td>
+                          </tr>
+                          <tr>
+                            <td style="width:30px">
+                              <div class="tl"></div>
+                            </td>
+                            <td>
+                              <p>I danced relative to the moon</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width:30px">
+                              <div class="tl-milestone" style="width:15px;height:15px"></div>
+                            </td>
+                            <td><b>High School musical 2009</b></td>
+                          </tr>
+            </table>
+            <h1>Skills</h1>
+            <h2>Basic computer skills</h2>
+            <div style="margin-top:10px;margin-bottom:15px;">
+              <div class="skill-tag">CSS</div>
+              <div class="skill-tag">HTML</div>
+              <div class="skill-tag">JS</div>
+            </div>
+            <h2>Skill Set 2</h2>
+            <div style="margin-top:10px;margin-bottom:15px;">
+              <div class="skill-tag">Matlab</div>
+              <div class="skill-tag">Simulink</div>
+              <div class="skill-tag">Photoshop</div>
+              <div class="skill-tag">Illustrator</div>
+              <div class="skill-tag">Reader</div>
+              <div class="skill-tag">Gravit</div>
+              <div class="skill-tag">Inkscape</div>
+              <div class="skill-tag">MS Paint</div>
+              <div class="skill-tag">Gimp</div>
+              <div class="skill-tag">Github</div>
+              <div class="skill-tag">Elementor</div>
+            </div>
+            <h1>Projects</h1>
+            <ul>
+              <li>Publication number 1</li>
+              <li>Publication number 2</li>
+              <li>Publication number 3</li>
+            </ul>
+          </div>
+        </div>
+        <!--Include page resize script to calculate the number of pages needed-->
+        <!--when printing the document--><script>
+//page_height in inches
+page_height = Math.round($("#page").height() * 1.041666535)/100;
+page_height = Math.ceil(page_height / 11.69) * 11.69;
+
+new_query = "@media print { #page{ height:" + page_height + "in;" + " }}";
+$("#jquery_print_styling").text(new_query);
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>

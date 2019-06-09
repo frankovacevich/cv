@@ -1,0 +1,11 @@
+mixin experience_item(date_start, date_end, title, description, more)
+	div.row
+		div.col-sm-12(style="padding-left:0")
+			p.versalitas-title(style="line-height:12px; margin:0; font-weight: normal")= date_start + " - " + date_end
+			p.versalitas-title(style="line-height:12px; margin:0")= title
+			p= description 
+		
+		
+h1 Experience
++experience_item("Aug 1990", "Dec 1990", "Government Internship", "Basically I played gold with the president for some months. One day I beat him at the game and next thing I know I was fired<a href='www.google.com'>hola</a>.")
+		

@@ -1,0 +1,23 @@
+mixin timeline_milestone(size, text)
+	tr
+		td(style="width:30px")
+			div.tl-milestone(style="width:" + size + ";height:" + size)
+		td
+			b= text
+
+mixin timeline_stem(text)
+	tr
+		td(style="width:30px")
+			div.tl
+		td
+			p= text
+		
+h1 Timeline
+table.timeline
+	+timeline_milestone('20px','Peru Championship 2009')
+	+timeline_stem('I won the tournament killing all  my competitors. Everybody was scared first but they decided to give me the first prize anyone. Ahh good ol times.')
+	+timeline_milestone('10px','India Semifinals 2008')
+	+timeline_stem('')
+	+timeline_milestone('10px','High School musical 2009')
+	+timeline_stem('I danced relative to the moon')
+	+timeline_milestone('15px','High School musical 2009')

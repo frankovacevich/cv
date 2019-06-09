@@ -1,0 +1,42 @@
+mixin about_item(icon, text, link = '', description_tooltip = '')
+	table
+		tr(data-toggle="tooltip" data-placement="right" title=description_tooltip)
+			if icon!==''
+				td
+					ion-icon(name=icon)
+			
+			td
+				if link!== ''
+					a(href=link)= text
+				else
+					a= text
+					
+			if description_tooltip !== ''
+				td
+					ion-icon(name='information-circle-outline').hide-on-print
+			else
+				td
+					ion-icon(name='information-circle-outline' style="visibility:hidden").hide-on-print
+
+//==============================================================================
+// WRITE CODE HERE ↘↘
+// about_item('icon', 'text', 'link, 'description_tooltip')
+// where the icon is the name code from the ion icon library (ionicons.com)
+//==============================================================================
+div.versalitas-title about me
++about_item("pin","Argentina","")
++about_item("calendar","24 years old","","Hi")
+
+div.versalitas-title contact
++about_item("mail","fran.kovacevich@gmail.com","mailto:fran.kovacevich@gmail.com")
++about_item("call","+549 342 44 999 74","tel:+5493424499974")
++about_item("logo-github","frankovacevich","https://github.com/frankovacevich")
++about_item("logo-twitter","@_frankova")
++about_item("logo-instagram","fran.kova")
++about_item("logo-linkedin","Francisco Kovacevich")
+
+div.versalitas-title languages
++about_item("","Spanish (mother tongue)","","I was born in Argentina, and I've speaking ")
++about_item("","English (fluent)","","I've")
++about_item("","French (fluent)")
++about_item("","Croatian (beginner)")

@@ -1,0 +1,21 @@
+/*Import fonts*/
+@import url('https://fonts.googleapis.com/css?family=Neuton:700|Noto+Sans+HK&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One|Permanent+Marker&display=swap');
+
+/*Fonts*/
+$serif_font : 'Neuton', serif;
+$sans_serif_font : 	'Noto Sans HK', sans-serif;
+$default_font_size : 14px;
+
+$print_serif_font : 'Neuton', serif;
+$print_sans_serif_font : 'Arial';
+$print_default_font_size : 14px;
+
+/*Page style*/
+$page_border_radius : 20px;
+$left_panel_color : #f8f8f8;
+
+/*Colors*/
+$main_color : #358da3;
+$link_color : #358da3;
+$tag_text_color : white;
