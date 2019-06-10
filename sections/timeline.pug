@@ -28,14 +28,44 @@ mixin timeline_empty(text)
 //==============================================================================
 h1 Education
 table.timeline
-	+timeline_milestone('21px','2018. Graduated as a Mechanical Engineer')
-	+timeline_stem("Final GPA: 9.65/10. <a href='certificates/IB.pdf' class='hide-on-print'>courses</a>")
+	+timeline_milestone("21px","2018. <a class='flink' href='certificates/IB.pdf'>Graduated as a Mechanical Engineer<ion-icon name='open' class='mini'></ion-icon></a>")
+	+timeline_stem("Final GPA: 9.65/10")
 	
-	+timeline_milestone('17px','2015. Passed the entrance exam to study at <i>Instituto Balseiro</i>')
-	+timeline_stem("")
+	+timeline_milestone('17px',"2015. Passed the entrance exam to study at <i>Instituto Balseiro</i>")
+	+timeline_stem("I received a scholarship to study in one of the best schools in Argentina.")
 	
-	+timeline_milestone('17px','2013. Started Chemical Engineering')
-	+timeline_stem("<i>Facultad de Ingenieria Química (FIQ), Universidad Nacional del Litoral (UNL)</i>. <a href='certificates/FIQ.pdf' class='hide-on-print'>courses</a>")
+	+timeline_milestone('17px',"2013. <a class='flink' onclick=''>Started Chemical Engineering<ion-icon name='open' class='mini'></ion-icon></a>")
+	+timeline_stem("<i>Facultad de Ing. Química (FIQ), Universidad Nacional del Litoral (UNL)</i>.")
 	
 	+timeline_milestone('13px','2012. Finished High School')
-	+timeline_empty("I went to <i>Colegio de la Inmaculada Concepción</i>. <a href='certificates/HS.pdf' class='hide-on-print'>diploma</a>")
+	+timeline_empty("I went to <i>Colegio de la Inmaculada Concepción</i>.")
+
+
+//==============================================================================
+// SOME JAVASCRIPT TO DISPLAY MODALS
+//==============================================================================
+script.
+
+	function ib_modal(){
+		var title = "I graduated from college";
+		var text = "";
+		show_modal(title,text);
+	}
+
+	function exam_modal(){
+		var title = "I passed the entrance exam";
+		var text = "";
+		show_modal(title,text);
+	}
+
+	function fiq_modal(){
+		var title = "My time as a Chemical Engineering major";
+		var text = "";
+		show_modal(title,text);
+	}
+	
+	function colegio_modal(){
+		var title = "I'm a graduate from Colegio Inmaculada";
+		var text = "";
+		show_modal(title,text);
+	}

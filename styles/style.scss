@@ -17,6 +17,10 @@ ion-icon {
 	margin-right: 5px;
 }
 
+.mini {
+	font-size: 16px !important;
+	margin:0 0 -3px 3px !important;
+}
 
 /*Body*/
 body, html{
@@ -62,6 +66,12 @@ a:link{ cursor: pointer }
 a:active { color: black; }
 a:visited { color: black; }
 a:hover { text-decoration: underline; color: $link_color; }
+
+.flink{
+	color: black;
+	cursor: pointer;
+	&:hover, &.hover { text-decoration: underline !important; color: $link_color !important; }
+}
 
 ul{
 	padding-left: 0;
@@ -206,6 +216,7 @@ li{
 	white-space: nowrap;
 	background-color: $main_color;
 	color: $tag_text_color;
+	cursor: default;
 }
 
 .skill-round-dot{
@@ -233,7 +244,7 @@ li{
 	.btn-primary:focus, .btn-primary.focus {
 		box-shadow: 0 0 0 .2rem rgba( $main_color, .5 ) !important;
 	}
-
+	
 	@media screen and (max-width: 575px) {
     display: none;
   }

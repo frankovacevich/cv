@@ -1,12 +1,38 @@
-mixin experience_item(date_start, date_end, title, description, more)
+mixin experience_item(date_start, date_end, title, description, onclick = '')
 	div.row
 		div.col-sm-12(style="padding-left:0")
-			p.versalitas-title(style="line-height:12px; margin:0; font-weight: normal")= date_start + " - " + date_end
-			p.versalitas-title(style="line-height:12px; margin:0")= title
-			p!= description 
-		
-		
-h1 Experience
-+experience_item("Sep 2018", "Mar 2019", "Internship at the LPSC, France", "Internship on the radiation heat transfer in Molten Salt Reactors. <a onclick=\"show_modal('Hello world','How is it going?')\">more</a>")
+			p.versalitas-title(style="line-height:12px; margin:0; font-weight: normal")!= date_start + " - " + date_end
+			
+			if onclick !== ""
+				p.versalitas-title(style="line-height:12px; margin:0;")!= "<a class='flink' onclick=\"" + onclick + "\">" + title + "<ion-icon name='open' class='hide-on-print mini'></ion-icon></a>"
+			else
+				p.versalitas-title(style="line-height:12px; margin:0;")!= "<a>" + title + "</a>"
+			
+			p!= description
+			
+	
 
-+experience_item("Aug 2017", "Jun 2018", "Final Project at INVAP", "Final project on the dynamics and control of helicopters as UAVs.")
+//==============================================================================
+// WRITE CODE HERE ↘↘
+// use experience_item mixin 
+//==============================================================================
+h1 Experience
++experience_item("Sep 2018", "Mar 2019", "Internship at the LPSC, France", "Internship on the radiation heat transfer in Molten Salt Reactors.","lpsc_modal()")
+
++experience_item("Aug 2017", "Jun 2018", "Final Project at INVAP", "Final project on the dynamics and control of helicopters as UAVs.","invap_modal()")
+
+//==============================================================================
+// SOME JAVASCRIPT TO DISPLAY MODALS
+//==============================================================================
+script.
+	function lpsc_modal(){
+		var title = "My Internship at the LPSC";
+		var text = "The LPSC is a lab in Grenoble, France that focuses on cosmology and subatomic phyisics (it's name means <i>Laboratoire de Physique Subatomique et Cosmologie</i>). I worked there for six months in the department of Nuclear Reactor Design, on a project to design and develop molten salt technology for reactors for space propulsion. Specifically, I carried out simulations on ANSYS to study the fluid dynamics and thermal evolution of a flow of molten salt, to design an experiment to measure the salt properties and determine the effect of the heat exchange by radiation.<br><br>My supervisors Pablo Rubiolo (<b><a href='mailto:pablo.rubiolo@lpsc.in2p3.fr'>pablo.rubiolo@lpsc.in2p3.fr</a></b>), Mauricio Tano Retamales (<b href='mailto:mauriciotano@gmail.com'><a>mauriciotano@gmail.com</a></b>) and Juan Blanco (<b><a href='mailto:juanblanco1993@gmail.com'>juanblanco1993@gmail.com</a></b>) where great people and I learned a lot from them.<br><br>These are my <b><a href='certificates/LPSC/RECOMMENDATION_LETTER.pdf'>Recommendation Letter</a></b> from my University and my <b><a href='certificates/LPSC/MOTIVATION_LETTER.pdf'>Motivation Letter</a></b>, and here is a simplified version of my <b><a href='certificates/LPSC/REPORT.pdf'>Final Report</a></b>.";
+		show_modal(title, text);
+	}
+	
+	function invap_modal(){
+		var title = "My Final Project at INVAP";
+		var text = "INVAP is a company in Argentina that designs nuclear reactors, satellites and other cool stuff. I chose to do my final thesis at INVAP because it's a wonderful place and full of capable and hard working engineers. I was impressed by the expertise and competences of my supervisor, José Relloso (<b><a href='mailto:relloso@invap.com.ar'>relloso@invap.com.ar</a></b>), from whom I learned a lot.<br><br>My thesis was on the design and testing of a control system for a conventional helicopter. I used various techniques from classical and optimal control theory, developed multiple control schemes and tested them on a computer simulator (JSBSim, coded in C++).<br><br><b><a href='certificates/INVAP/THESIS.pdf'>Here</a></b> is an extract of the final report.";
+		show_modal(title, text);
+	}

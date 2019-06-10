@@ -12,7 +12,7 @@
 		top: 0;
   }
 
-	.hide-on-print{ visibility: hidden; }
+	.hide-on-print,.mini{ visibility: hidden; }
 	.page-container{ padding: 0; }
 	.top-left-radius{ border-top-left-radius: 0; }
 	.top-right-radius{ border-top-right-radius: 0; }

@@ -22,6 +22,11 @@ ion-icon {
   margin-right: 5px;
 }
 
+.mini {
+  font-size: 16px !important;
+  margin: 0 0 -3px 3px !important;
+}
+
 /*Body*/
 body, html {
   margin: 0;
@@ -77,6 +82,15 @@ a:visited {
 a:hover {
   text-decoration: underline;
   color: #358da3;
+}
+
+.flink {
+  color: black;
+  cursor: pointer;
+}
+.flink:hover, .flink.hover {
+  text-decoration: underline !important;
+  color: #358da3 !important;
 }
 
 ul {
@@ -219,6 +233,7 @@ li:before {
   white-space: nowrap;
   background-color: #358da3;
   color: white;
+  cursor: default;
 }
 
 .skill-round-dot {
@@ -302,7 +317,7 @@ table.timeline .tl-milestone:hover, table.timeline .tl-milestone.hover {
     top: 0;
   }
 
-  .hide-on-print {
+  .hide-on-print, .mini {
     visibility: hidden;
   }
 

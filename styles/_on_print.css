@@ -3,7 +3,7 @@
  * 25 |         font-family: $print_sans_serif_font;
  *    |                      ^^^^^^^^^^^^^^^^^^^^^^
  *    '
- *   c:\users\fran_\documents\workspace\pug\styles\_on_print.scss 25:16  root stylesheet */
+ *   c:\users\fran_\documents\workspace\resume\styles\_on_print.scss 25:16  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 25 \2502          font-family: $print_sans_serif_font;\d\a    \2502                       ^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   c:\\users\\fran_\\documents\\workspace\\pug\\styles\\_on_print.scss 25:16  root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 25 \2502          font-family: $print_sans_serif_font;\d\a    \2502                       ^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   c:\\users\\fran_\\documents\\workspace\\resume\\styles\\_on_print.scss 25:16  root stylesheet";
 }
