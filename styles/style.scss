@@ -59,9 +59,9 @@ a{
 }
 
 a:link{ cursor: pointer }
-a:hover { text-decoration: underline; color: $link_color; }
 a:active { color: black; }
 a:visited { color: black; }
+a:hover { text-decoration: underline; color: $link_color; }
 
 ul{
 	padding-left: 0;

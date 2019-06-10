@@ -3,9 +3,10 @@ mixin experience_item(date_start, date_end, title, description, more)
 		div.col-sm-12(style="padding-left:0")
 			p.versalitas-title(style="line-height:12px; margin:0; font-weight: normal")= date_start + " - " + date_end
 			p.versalitas-title(style="line-height:12px; margin:0")= title
-			p= description 
+			p!= description 
 		
 		
 h1 Experience
-+experience_item("Aug 1990", "Dec 1990", "Government Internship", "Basically I played gold with the president for some months. One day I beat him at the game and next thing I know I was fired<a href='www.google.com'>hola</a>.")
++experience_item("Sep 2018", "Mar 2019", "Internship at the LPSC, France", "Internship on the radiation heat transfer in Molten Salt Reactors. <a href=''>more</a>")
 		
++experience_item("Aug 2017", "Jun 2018", "Final Project at INVAP", "Final project on the dynamics and control of helicopters as UAVs.")

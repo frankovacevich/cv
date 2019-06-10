@@ -3,21 +3,39 @@ mixin timeline_milestone(size, text)
 		td(style="width:30px")
 			div.tl-milestone(style="width:" + size + ";height:" + size)
 		td
-			b= text
+			b!= text
 
 mixin timeline_stem(text)
 	tr
 		td(style="width:30px")
 			div.tl
 		td
-			p= text
+			p!= text
+			
+mixin timeline_empty(text)
+	tr
+		td(style="width:30px")
+			div
+		td
+			p!= text
 		
-h1 Timeline
+//==============================================================================
+// WRITE CODE HERE ↘↘
+// use the timeline mixins to create a timeline:
+// timeline_milestone(size, text) : creates a milestone (bullet)
+// timeline_stem(text) : draws a vertical stem (between two milestones)
+// timeline_empty(text) : writes text (useful for the last element)
+//==============================================================================
+h1 Education
 table.timeline
-	+timeline_milestone('20px','Peru Championship 2009')
-	+timeline_stem('I won the tournament killing all  my competitors. Everybody was scared first but they decided to give me the first prize anyone. Ahh good ol times.')
-	+timeline_milestone('10px','India Semifinals 2008')
-	+timeline_stem('')
-	+timeline_milestone('10px','High School musical 2009')
-	+timeline_stem('I danced relative to the moon')
-	+timeline_milestone('15px','High School musical 2009')
+	+timeline_milestone('21px','2018. Graduated as a Mechanical Engineer')
+	+timeline_stem("Final GPA: 9.65/10. <a href='certificates/IB.pdf' class='hide-on-print'>courses</a>")
+	
+	+timeline_milestone('17px','2015. Passed the entrance exam to study at <i>Instituto Balseiro</i>')
+	+timeline_stem("")
+	
+	+timeline_milestone('17px','2013. Started Chemical Engineering')
+	+timeline_stem("<i>Facultad de Ingenieria Química (FIQ), Universidad Nacional del Litoral (UNL)</i>. <a href='certificates/FIQ.pdf' class='hide-on-print'>courses</a>")
+	
+	+timeline_milestone('13px','2012. Finished High School')
+	+timeline_empty("I went to <i>Colegio de la Inmaculada Concepción</i>. <a href='certificates/HS.pdf' class='hide-on-print'>diploma</a>")
