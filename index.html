@@ -31,7 +31,8 @@
 	<style id="jquery_print_styling"></style>
 </head>
 
-  <body><div class="download-button hide-on-print">
+  <body>
+    <div class="download-button hide-on-print">
 	<button type="button" class="btn btn-primary" onclick="window.print()">
 	<table>
 		<tr>
@@ -45,6 +46,28 @@
 	</table>
 	</button>
 </div>
+    <div class="modal fade" id="my-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+	function show_modal(title,text){
+		$("#modal-title").html(title);
+		$("#modal-body").html(text);
+		$('#my-modal').modal('show');
+	}
+</script>
 
     <div class="img-background hide-on-print"></div>
     <div class="page-container">
@@ -285,7 +308,7 @@
                           <div class="col-sm-12" style="padding-left:0">
                             <p class="versalitas-title" style="line-height:12px; margin:0; font-weight: normal">Sep 2018 - Mar 2019</p>
                             <p class="versalitas-title" style="line-height:12px; margin:0">Internship at the LPSC, France</p>
-                            <p>Internship on the radiation heat transfer in Molten Salt Reactors. <a href=''>more</a></p>
+                            <p>Internship on the radiation heat transfer in Molten Salt Reactors. <a onclick="show_modal('Hello world','How is it going?')">more</a></p>
                           </div>
                         </div>
                         <div class="row">
@@ -389,8 +412,11 @@
             </div>
             <h2>Soft Skills</h2>
             <div style="margin-top:10px;margin-bottom:15px;">
-              <div class="skill-tag">Teaching and explaining concepts</div>
-              <div class="skill-tag">Patience</div>
+              <div class="skill-tag">Love teaching and explaining concepts</div>
+              <div class="skill-tag">Energetic</div>
+              <div class="skill-tag">Love to learn new things</div>
+              <div class="skill-tag">Good at teamwork</div>
+              <div class="skill-tag">Patient and respectful</div>
             </div>
             <h1>Projects</h1>
             <ul>
