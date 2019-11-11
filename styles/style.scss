@@ -17,6 +17,7 @@ ion-icon {
 	margin-right: 5px;
 }
 
+
 .mini {
 	font-size: 16px !important;
 	margin:0 0 -3px 3px !important;
@@ -244,7 +245,7 @@ li{
 	.btn-primary:focus, .btn-primary.focus {
 		box-shadow: 0 0 0 .2rem rgba( $main_color, .5 ) !important;
 	}
-	
+
 	@media screen and (max-width: 575px) {
     display: none;
   }

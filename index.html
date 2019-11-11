@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+
+<!--pug -w ./ -P--><!DOCTYPE html>
 <html>
    <head>
 	<!-- Title and favicon -->
 	<title>Francisco Kovacevich</title>
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-
-
 
 	<!-- Open all links in new tab -->
 	<base target="_blank">
@@ -31,11 +30,22 @@
 	<script> $(function () { $('[data-toggle="tooltip"]').tooltip() }) </script>
 
 	<style id="jquery_print_styling"></style>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152032503-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-152032503-1');
+	</script>
+
 </head>
 
   <body>
     <div class="download-button hide-on-print">
-	<button type="button" class="btn btn-primary" onclick="window.print()">
+	<button type="button" class="btn btn-primary" onclick="window.print()" data-toggle="tooltip" data-placement="top" data-html="true" title="Remember to set margins to 'none'">
 	<table>
 		<tr>
 			<td>
@@ -130,6 +140,18 @@
                           </tr>
                         </table>
                         <table>
+                          <tr data-toggle="tooltip" data-placement="right" title="I am waiting to become a Croatian (and EU) citizen on 2020. I've successfully applied for the Croatian citizenship thanks to my ancestors' roots.">
+                            <td>
+                              <ion-icon name="journal"></ion-icon>
+                            </td>
+                            <td><a>Croatian (in process)</a>
+                            </td>
+                            <td>
+                              <ion-icon class="hide-on-print" name="information-circle-outline"></ion-icon>
+                            </td>
+                          </tr>
+                        </table>
+                        <table>
                           <tr data-toggle="tooltip" data-placement="right" title="">
                             <td>
                               <ion-icon name="calendar"></ion-icon>
@@ -159,7 +181,7 @@
                             <td>
                               <ion-icon name="call"></ion-icon>
                             </td>
-                            <td><a href="tel:+5493424499974">+549 342 4 49 99 74</a>
+                            <td><a href="tel:+5493424499974">+549 34 24 49 99 74</a>
                             </td>
                             <td>
                               <ion-icon class="hide-on-print" name="information-circle-outline" style="visibility:hidden"></ion-icon>
@@ -190,18 +212,7 @@
                             </td>
                           </tr>
                         </table>
-                        <table>
-                          <tr data-toggle="tooltip" data-placement="right" title="">
-                            <td>
-                              <ion-icon name="logo-twitter"></ion-icon>
-                            </td>
-                            <td><a href="https://twitter.com/following">@_frankova</a>
-                            </td>
-                            <td>
-                              <ion-icon class="hide-on-print" name="information-circle-outline" style="visibility:hidden"></ion-icon>
-                            </td>
-                          </tr>
-                        </table>
+            <!--+about_item("logo-twitter","@_frankova","https://twitter.com/following","")-->
                         <table>
                           <tr data-toggle="tooltip" data-placement="right" title="">
                             <td>
@@ -243,8 +254,17 @@
                           </tr>
                         </table>
                         <table>
-                          <tr data-toggle="tooltip" data-placement="right" title="Last year I had the chance to visit Croatia and get to know my ancestors' home town. I fell in love with the country and now I want to learn more about my ancestors and their culture by learning the language 😊.">
+                          <tr data-toggle="tooltip" data-placement="right" title="Level A2, I've studied Croatian for one year">
                             <td><a>Croatian (beginner)</a>
+                            </td>
+                            <td>
+                              <ion-icon class="hide-on-print" name="information-circle-outline"></ion-icon>
+                            </td>
+                          </tr>
+                        </table>
+                        <table>
+                          <tr data-toggle="tooltip" data-placement="right" title="Level A2, I've studied Italian for one year and have family in Italy">
+                            <td><a>Italian (beginner)</a>
                             </td>
                             <td>
                               <ion-icon class="hide-on-print" name="information-circle-outline"></ion-icon>
@@ -253,17 +273,8 @@
                         </table>
             <div class="versalitas-title">interests</div>
                         <table>
-                          <tr data-toggle="tooltip" data-placement="right" title="I'm amazed by ">
-                            <td><a>Control and Robotics</a>
-                            </td>
-                            <td>
-                              <ion-icon class="hide-on-print" name="information-circle-outline"></ion-icon>
-                            </td>
-                          </tr>
-                        </table>
-                        <table>
                           <tr data-toggle="tooltip" data-placement="right" title="">
-                            <td><a>Designing pretty stuff</a>
+                            <td><a>Control, Robotics and Automation</a>
                             </td>
                             <td>
                               <ion-icon class="hide-on-print" name="information-circle-outline" style="visibility:hidden"></ion-icon>
@@ -272,7 +283,7 @@
                         </table>
                         <table>
                           <tr data-toggle="tooltip" data-placement="right" title="">
-                            <td><a>Programming useful stuff</a>
+                            <td><a>Programming</a>
                             </td>
                             <td>
                               <ion-icon class="hide-on-print" name="information-circle-outline" style="visibility:hidden"></ion-icon>
@@ -281,25 +292,7 @@
                         </table>
                         <table>
                           <tr data-toggle="tooltip" data-placement="right" title="">
-                            <td><a>Playing with Arduinos 'n' stuff</a>
-                            </td>
-                            <td>
-                              <ion-icon class="hide-on-print" name="information-circle-outline" style="visibility:hidden"></ion-icon>
-                            </td>
-                          </tr>
-                        </table>
-                        <table>
-                          <tr data-toggle="tooltip" data-placement="right" title="I prefer books to web articles (although I love Medium and go there frequently). I'm currently reading 'The DevOps Manual' by Gene Kims, Jez Humble, Patrick Debois and John Willis. One year ago I started to keep track of the books I read (check out my repository 'books' on github)">
-                            <td><a>Reading interesting stuff</a>
-                            </td>
-                            <td>
-                              <ion-icon class="hide-on-print" name="information-circle-outline"></ion-icon>
-                            </td>
-                          </tr>
-                        </table>
-                        <table>
-                          <tr data-toggle="tooltip" data-placement="right" title="">
-                            <td><a>Cycling</a>
+                            <td><a href="https://docs.google.com/spreadsheets/d/1IdMugMnA76vWNoi-PkMMNRnYCGDAKTk2qdOFrVZzgJc/edit?usp=sharing">Reading</a>
                             </td>
                             <td>
                               <ion-icon class="hide-on-print" name="information-circle-outline" style="visibility:hidden"></ion-icon>
@@ -322,7 +315,7 @@
                         <div class="row">
                           <div class="col-sm-12" style="padding-left:0">
                             <p class="versalitas-title" style="line-height:12px; margin:0; font-weight: normal">Sep 2018 - Mar 2019</p>
-                            <p class="versalitas-title" style="line-height:12px; margin:0;"><a class='flink' onclick="lpsc_modal()">Internship at the LPSC, France<ion-icon name='open' class='hide-on-print mini'></ion-icon></a></p>
+                            <p class="versalitas-title" style="line-height:12px; margin:0;"><a class='flink' onclick="lpsc_modal()">Internship at LPSC, France<ion-icon name='open' class='hide-on-print mini'></ion-icon></a></p>
                             <p>Internship on the radiation heat transfer in Molten Salt Reactors.</p>
                           </div>
                         </div>
@@ -390,7 +383,7 @@
                             <td style="width:30px">
                               <div class="tl-milestone" style="width:17px;height:17px"></div>
                             </td>
-                            <td><b>2013. <a class='flink' onclick=''>Started Chemical Engineering<ion-icon name='open' class='mini'></ion-icon></a></b></td>
+                            <td><b>2013. <a class='flink' href='certificates/FIQ.pdf'>Started Chemical Engineering<ion-icon name='open' class='mini'></ion-icon></a></b></td>
                           </tr>
                           <tr>
                             <td style="width:30px">
@@ -406,14 +399,7 @@
                             </td>
                             <td><b>2012. Finished High School</b></td>
                           </tr>
-                          <tr>
-                            <td style="width:30px">
-                              <div></div>
-                            </td>
-                            <td>
-                              <p>I went to <i>Colegio de la Inmaculada Concepción</i>.</p>
-                            </td>
-                          </tr>
+              <!--+timeline_empty("I went to <i>Colegio de la Inmaculada Concepción</i>.")-->
             </table>
             <!--==============================================================================-->
             <!-- SOME JAVASCRIPT TO DISPLAY MODALS-->
@@ -449,48 +435,39 @@
                           <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="I prefer Google Docs, Sheets and Slides though, specially for team work">Office Word / Excel / Power Point</div>
                           <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="I use Photoshop, Gravit designer, Inkscape, Adobe XD and other programs regularly to create images and layouts for my projects">Photoshop and similar</div>
                           <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="Been using it for numerous reports at college.">LaTex</div>
-                          <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="I use it regularly to upload and share projects (this thing is hosted on github pages).">github</div>
+                          <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="I use it regularly to upload and share projects.">github</div>
                           <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="Used it in multiple courses throughout college. I'm very comfortable with Matlab and Simulink.">Matlab / Simulink</div>
                           <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="I've done a course on technical drawing with AutoCAD. I'm not an expert but I can comfortably use it.">AutoCAD</div>
                           <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="Similar to SolidWorks (but free). Learned it in a course of mechanical design.">SolidEdge</div>
                           <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="Learned it during my internship in France. I did some basic fluid dynamics and thermal exchange simulations.">Ansys</div>
-                          <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="I'm a Windows user (I think it's better for everyday use), but I have experience with computers running Ubuntu and other versions of Linux. Not a MAC user (yet 😁).">Windows or Linux</div>
+                          <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="I'm a Windows user (I think it's better for everyday use), but I have experience with computers running Ubuntu and other versions of Linux.">Windows or Linux</div>
             </div>
             <h2>Programming skills</h2>
             <div style="margin-top:10px;margin-bottom:15px;">
                           <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="During college I made an introductory course to C. I've also learned from using Arduino, PICs and other microcontrollers. In my thesis I worked with a simulator coded in C++">C / C++</div>
-                          <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="Since highschool I love designing programs for Windows. I learned C# and VB.NET from scratch mostly by myself.">C# / VB.NET</div>
+                          <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="Since highschool I love designing programs for Windows. I learned C# and VB.NET from scratch mostly by myself.">C# / vb.net</div>
                           <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="I use Python here and there for whatever. Learned from a introductory course from the MIT Open Courseware, used it in a lot of projects since.">Python</div>
-                          <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="Quick anecdote: my first App was a score keeper for a card game called &lt;i&gt;Triunfo&lt;/i&gt;, after a friend's suggestion. I have done some other projects with Android and uploaded some apps to the PlayStore (see my projects below). I prefer Java over Kotlin (I haven't done much with Kotlin). Looking forward to learning Swift and XCode!">Java / Android SDK</div>
+                          <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="I have worked on some projects with Android and uploaded some apps to the PlayStore (see my projects below).">Java/Android</div>
                           <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="I started doing some projects that needed some backend, so I picked php because it seemed the easiest to learn (I mostly use XAMP for backend). I prefer pure php, althoug have completed some basic tutorials with Laravel. I'm currenly digging into node.js and Django.">PHP</div>
                           <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="Been using it for most of my projects that require a database. I'm quite comfortable with it.">MySQL</div>
-                          <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="I recently learned MongoDB and started using it in some projects. Not an expert, but it doesn't seem hard to pick up.">MongoDB</div>
-                          <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="I started using basic html, now I use jade (or pug) whenever I can (this site was made with pug). Planning to learn about other template frameworks in the future.">html / jade (pug)</div>
-                          <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="&lt;img style='width:48px' src='icons/sass.png'&gt;">css / sass</div>
-                          <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="Mostly for frontend web desing (including jQuery). Currently learning node.js for backend.">JavaScript</div>
+              <!--+tag_item('MongoDB', "I recently learned MongoDB and started using it in some projects. Not an expert, but it doesn't seem hard to pick up.")-->
+                          <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="I started using basic html, now I use jade (or pug) whenever I can (this site was made with pug).">html</div>
+              <!--+tag_item('JavaScript',"Mostly for frontend web desing (including jQuery). Currently learning node.js for backend.")-->
             </div>
             <h2>Soft Skills</h2>
             <div style="margin-top:10px;margin-bottom:15px;">
-                          <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="I really like when someone comes asking me to explain some topic or clear some doubt. It's a win-win situation, they learn from me, and I reinforce what I know.">Love teaching and explaining concepts</div>
                           <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="There's ">Energetic</div>
                           <div class="skill-tag" data-toggle="tooltip" data-placement="top" data-html="true" title="Now with the internet we can access tons of learning material, even from the top universities of the world. Learning something new is easier than ever. What a time to be alive!">Autodidact</div>
                           <div class="skill-tag">Good at teamwork</div>
                           <div class="skill-tag">Patient and respectful</div>
             </div>
-            <!--This whitespace is only present when printing the document-->
-            <!--It's usefull for page breaks-->
-            <div class="white-space" style="width:100%; height: 40px"></div>
-            <!--This whitespace is only present when printing the document-->
-            <!--It's usefull for page breaks-->
-            <div class="white-space" style="width:100%; height: 40px"></div>
-            <!--This whitespace is only present when printing the document-->
-            <!--It's usefull for page breaks-->
-            <div class="white-space" style="width:100%; height: 40px"></div>
-            <h1>Personal Projects</h1>
+            <!--include sections/white_space.pug-->
+            <!--include sections/white_space.pug-->
+            <!--include sections/white_space.pug-->
+            <h1>Recent Projects</h1>
             <ul>
-              <li>Publication number 1</li>
-              <li>Publication number 2</li>
-              <li>Publication number 3</li>
+              <li><b>Coupsh</b>. A network to send notification and spread information within groups easily. <a href="https://coupsh.com">https://coupsh.com</a></li>
+              <li><b>Grand Croatian Dictionary</b>. An Android App that helped me (and many others) learn Croatian (and Russian). See it on <a href="https://frankovacevich.github.io/grand_dictionary_web/">Github</a> and the <a href="https://play.google.com/store/apps/details?id=com.subtlebit.fran_.croatiandictionary&hl=en">Play Store</a></li>
             </ul>
           </div>
         </div>
