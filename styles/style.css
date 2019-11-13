@@ -334,12 +334,16 @@ table.timeline .tl-milestone:hover, table.timeline .tl-milestone.hover {
   }
 
   .qr-container {
-    top: 7.9in;
+    top: 8.1in;
     bottom: auto;
   }
 
   .white-space {
     display: block;
+  }
+
+  .tooltip {
+    display: none;
   }
 
   html, body {

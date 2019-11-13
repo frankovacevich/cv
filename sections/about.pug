@@ -7,7 +7,7 @@ mixin about_item(icon, text, link = '', description_tooltip = '')
 			
 			td
 				if link!== ''
-					a(href=link)= text
+					a(href=link)!= text
 				else
 					a= text
 					
@@ -33,17 +33,17 @@ div.versalitas-title contact
 +about_item("call","+549 34 24 49 99 74","tel:+5493424499974")
 +about_item("paper-plane","@fran_kova","https://t.me/fran_kova")
 +about_item("logo-github","frankovacevich","https://github.com/frankovacevich")
-//+about_item("logo-twitter","@_frankova","https://twitter.com/following","")
++about_item("logo-twitter","@_frankova","https://twitter.com/following","")
 +about_item("logo-linkedin","Francisco Kovacevich","https://www.linkedin.com/in/francisco-kovacevich-71955667/")
 
 div.versalitas-title languages
 +about_item("","Spanish (mother tongue)","","")
-+about_item("","English (fluent)","certificates/FCE.pdf","")
-+about_item("","French (fluent)","certificates/DELFB2.pdf")
++about_item("","English (fluent) <ion-icon name='open' class='hide-on-print mini'></ion-icon></a>","certificates/FCE.pdf","")
++about_item("","French (fluent) <ion-icon name='open' class='hide-on-print mini'></ion-icon></a>","certificates/DELFB2.pdf")
 +about_item("","Croatian (beginner)","","Level A2, I've studied Croatian for one year")
 +about_item("","Italian (beginner)","","Level A2, I've studied Italian for one year and have family in Italy")
 
 div.versalitas-title interests
 +about_item("","Control, Robotics and Automation","","")
 +about_item("","Programming","","")
-+about_item("","Reading","https://docs.google.com/spreadsheets/d/1IdMugMnA76vWNoi-PkMMNRnYCGDAKTk2qdOFrVZzgJc/edit?usp=sharing","")
++about_item("","Reading <ion-icon name='open' class='hide-on-print mini'></ion-icon></a>","https://docs.google.com/spreadsheets/d/1IdMugMnA76vWNoi-PkMMNRnYCGDAKTk2qdOFrVZzgJc/edit?usp=sharing","")
